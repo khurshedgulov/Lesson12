@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Каждый тег item это отдельный пункт меню, для которого необходимо
+    указать атрибут:
+        id - для программного различения какой пункт меню был нажат,
+        title - для отображения пункта меню в пользовательском интерфейсе,
+        icon - для указания иконки для показа меню в системном toolbar-е
+        app:showAsAction - устанавливает показывать иконку в toolbar-e или только в выпадающем списке меню при клике на три вертикальные точки
+    -->
+    <item
+        android:id="@+id/addSomething"
+        android:title="Опция 1"
+        android:icon="@drawable/ic_control_point_black_24dp"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/drive"
+        android:icon="@drawable/ic_directions_car_black_24dp"
+        android:title="Опция 2"
+        app:showAsAction="always" />
+
+    <item android:title="Item"
+        android:icon="@drawable/ic_favorite_border_black_24dp"
+        android:id="@+id/favorite"/>
+</menu>
